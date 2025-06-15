@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-position: center;
+    color: hsl(0, 0%, 100%);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
+.heading,
+.call-to-action {
+    font-family: "Raleway", sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.container header {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(217, 28%, 15%);
+    padding: 30px 50px;
+}
+
+.container header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container header nav ul li a {
+    margin-left: 50px;
+}
+
+.container .hero {
+    text-align: center;
+    background-color: hsl(217, 28%, 15%);
+    background-image: url(images/bg-curvy-desktop.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.container .hero .hero-title {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.container .hero .content {
+    margin: 30px 0;
+}
+
+.container .hero .content p {
+    margin-bottom: 5px;
+}
+
+.container .hero .btn-hero {
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+.container .hero .get-started {
+    display: block;
+    text-decoration: none;
+    background-color: hsl(198, 60%, 50%);
+    width: 250px;
+    margin: auto;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.container main {
+    background-color: hsl(218, 28%, 13%);
+    position: relative;
+}
+
+.container main .cards .first-line,
+.container main .cards .second-line {
+    display: flex;
+    justify-content: center;
+}
+
+.container main .cards .first-line .card,
+.container main .cards .second-line .card {
+    margin: 50px 100px;
+    text-align: center;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container main .cards .first-line .card img,
+.container main .cards .second-line .card img {
+    margin-bottom: 20px;
+}
+
+.container main .cards .first-line .card .card-title,
+.container main .cards .second-line .card .card-title {
+    margin-bottom: 10px;
+}
+
+.container main .productive {
+    padding: 0 50px;
+    display: flex;
+}
+
+.container main .productive .productive-content {
+    flex: 1;
+    margin-top: 120px;
+    padding: 0 50px;
+}
+
+.container main .productive .productive-content .productive-title {
+    text-align: left;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.container main .productive .productive-content p {
+    margin-bottom: 15px;
+}
+
+.container main .productive .productive-content a {
+    display: inline-block;
+    margin-top: 15px;
+    color: hsl(176, 68%, 64%);
+}
+
+.container main .productive .productive-content a:after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+
+.container main .testimonials {
+    background-image: url(images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position-x: 100px;
+    padding: 30px 100px 350px 100px;
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container main .testimonials .testimonial-card {
+    background-color: hsl(219, 30%, 18%);
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.container main .testimonials .testimonial-card .testimonial-author {
+    margin-top: 20px;
+    display: flex;
+}
+
+.container main .testimonials .testimonial-card .testimonial-author img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.container main .testimonials .testimonial-card .testimonial-author .testimonial-author-info {
+    padding-left: 15px;
+}
+
+.container main .get-access {
+    /* position: absolute;
+  left: 25%; */
+    /* bottom: -100px; */
+    margin: auto;
+    padding: 30px 50px;
+    background-color: hsl(219, 30%, 18%);
+    text-align: center;
+    max-width: 70%;
+    border-radius: 10px;
+}
+
+.container main .get-access .title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.container main .get-access input {
+    margin: 30px 20px 0 0;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 30px;
+    width: 65%;
+}
+
+.container main .get-access a {
+    font-weight: 700;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: hsl(176, 68%, 64%);
+}
+
+.container footer {
+    margin-top: -100px;
+    padding: 200px 0 50px 100px;
+    background-color: hsl(216, 53%, 9%);
+}
+
+.container footer .footer-container {
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+.container footer .footer-container .location,
+.container footer .footer-container .contact,
+.container footer .footer-container nav,
+.container footer .footer-container .icons {
+    flex: 1;
+}
+
+.container footer .footer-container .location,
+.container footer .footer-container .contact .phone,
+.container footer .footer-container .contact .email {
+    display: flex;
+}
+
+.container footer .footer-container .location {
+    margin-right: 5rem;
+}
+
+.container footer .footer-container .location img {
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.container footer .footer-container .contact .email {
+    margin: 1rem 0;
+}
+
+.container footer .footer-container .contact img {
+    margin-right: 1rem;
+}
+
+.container footer .footer-container nav,
+.container footer .footer-container .icons {
+    display: flex;
+}
+
+.container footer .footer-container nav .first-nav {
+    margin-right: 3rem;
+}
+
+.container footer .footer-container nav a {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.container .icons .facebook,
+.container .icons .twitter,
+.container .icons .pinterest {
+    margin-right: 1rem;
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .productive {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productive-content {
+        text-align: center;
+    }
+    
+    .container main .productive .productive-content .productive-title{
+        text-align: center;
+        font-size: 2.2em;
+    }
+
+    .productive-content br{
+        display: none;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .testimonial-card {
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+
+    .get-access {
+        position: absolute;
+        left: 14.9%;
+        bottom: -150px;
+    }
+
+    .get-access input {
+        min-width: 100%;
+    }
+
+    .get-access a {
+        margin-top: 20px;
+        min-width: 100%;
+    }
+
+    .container footer .footer-container {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container footer .footer-container .location,
+    .container footer .footer-container .contact,
+    .container footer .footer-container nav,
+    .container footer .footer-container .icons {
+        margin-top: 50px;
+    }
+
+    .container footer .footer-container nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-nav {
+        margin-top: 40px;
+    }
+
+    .container footer .footer-container .icons {
+        margin: auto;
+    }
+}
